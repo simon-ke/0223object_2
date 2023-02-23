@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/about.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>關於我們</title>
+</head>
+
+<body>
+  <!-- 頂端的導覽列 -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mynav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">甜時 ． <span class="h1">Sweet</span></a> <!-- 標題可自行更改@@ -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">關於我們</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">食譜類別</a>
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="product-cake.html">蛋糕</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product-cookie.html">餅乾</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product-bread.html">麵包</a>
+                <li>
+                  <a class="dropdown-item" href="product-bread.html">其它</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">常見問題</a>
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">食材保存方式</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">成品保存期限</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">器具養護(模具)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row g-0 justify-content-center align-items-center text">
+      <div class="col-lg-5 text-center text-white p-2">
+        <!-- Heading -->
+        <h1 class="display-2 text-white my-5 py-5">
+          <span class="h1" style="font-size:100px;">About Us</span>
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- 最上面的長條圖片 -->
+  <!--<div id="banner"></div>-->
+
+  <!-- 裝有底下的版面 -->
+  <div class="container mb-3">
+    <div class="row g-0" id="section-B">
+      <div class="col-lg align-self-center text-center">
+        <h3 class="title mt-3">| 關於我們<small>About Us</small></h3>
+        <p> 吃一口讓你宛如置身巴黎街頭，每一口都是滿滿的幸福。</p>
+        <p> 嚴選獨家法式香草佐料<br /> 時尚、純手工製作<br /> 全台第一家上市總店<br /> 採用台灣當季新鮮特產水果</p>
+      </div>
+      <div class="col-lg" data-aos="flip-left" data-aos-duration="1000">
+        <img src="images/head/container01.jpg" class="img-fluid">
+      </div>
+    </div>
+    <div class="row g-0" id="section-B">
+      <div class="col-lg align-self-center text-center">
+        <h3 class="title mt-3">| 店家資訊<small>information</small></h3>
+        <p>營業時間：11:00a.m. ~ 20:00p.m.<br />電話：03-12345678<br />地址：320 桃園市中壢區健行路229號
+        </p>
+      </div>
+      <div class="col-lg order-lg-first" data-aos="flip-left" data-aos-duration="1000">
+        <img src="images/head/container02.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- 最底下的資訊 -->
+  <footer class="text-center bg-light text-black py-2">
+    © 2023 All Rights Reserved.
+  </footer>
+
+
+
+  <script>
+    const navEl = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        navEl.classList.add('navbar-light');
+        navEl.classList.remove('navbar-dark');
+      } else if (window.scrollY == 0) {
+        navEl.classList.add('navbar-dark');
+        navEl.classList.remove('navbar-light');
+      }
+    })
+  </script>
+  <!-- Optional JavaScript -->
+  <script src="js/bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
